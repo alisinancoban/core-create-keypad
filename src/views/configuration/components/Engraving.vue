@@ -51,6 +51,14 @@
                                     <el-input v-model="leftTexts[index]" class="w-50 m-2" size="large" />
                                 </el-col>
                             </div>
+                            <div v-if="store.getters.getLeftSide == 'n3'">
+                                <el-col class="dp-inline" :span="12" v-for="(text,index) in leftNumbers" :key="index">
+                                    <el-input-number v-model="leftNumbers[index]" :min="0" :max="9" class="w-50 m-2" size="large" />
+                                </el-col>
+                                <el-col class="dp-inline" :span="12" v-for="(text,index) in leftTexts.slice(0,3)" :key="index">
+                                    <el-input v-model="leftTexts[index]" class="w-50 m-2" size="large" />
+                                </el-col>
+                            </div>
                         </div>
                         <div v-if="store.getters.getLeftStyle == 'icon'">
                             <div v-if="store.getters.getLeftSide == '2k'" >
@@ -121,7 +129,7 @@
             </el-tab-pane>
             <el-tab-pane label="Color" name="color">
                 <el-row justify="center">
-                    <el-col :span="10"> 
+                    <el-col :span="11"> 
                         <el-row>
                             <div v-if="store.getters.getLeftSide == '2k'">
                                 <el-col class="dp-inline" :span="12" v-for="(color, key, index) in leftIcons.slice(0,4)" :key="index">
@@ -138,7 +146,7 @@
                     <el-col v-if="store.getters.getFrameType == 'doubleFrame'" :span="2">
                         
                     </el-col>
-                    <el-col v-if="store.getters.getFrameType == 'doubleFrame'" :span="10">
+                    <el-col v-if="store.getters.getFrameType == 'doubleFrame'" :span="11">
                         <el-row>
                             <div v-if="store.getters.getRightSide == '2k'">
                                 <el-col class="dp-inline" :span="12" v-for="(color, key, index) in rightIcons.slice(0,4)" :key="index">
@@ -151,22 +159,6 @@
                                 </el-col>
                             </div>
                         </el-row>
-
-
-
-
-                        <!-- <el-row>
-                            <div v-if="store.getters.getRightSide == '2k'">
-                                <div v-for="(color, key, index) in rightIcons.slice(0,4)" :key="index">
-                                    <ColorPicker :color=color :index="key" frame="right"/>
-                                </div>
-                            </div>
-                            <div v-if="store.getters.getRightSide == '4k'">
-                                    <div v-for="(color, key, index) in rightIcons" :key="index">
-                                    <ColorPicker :color=color :index="key" frame="right"/>
-                                </div>
-                            </div>
-                        </el-row> -->
                     </el-col>
                 </el-row> 
             </el-tab-pane>
@@ -200,6 +192,8 @@
   const leftTexts = ref(store.getters.getLeftTexts);
   const rightIcons = ref(store.getters.getRightIcons);
   const rightTexts = ref(store.getters.getRightTexts);
+  const leftNumbers = ref(store.getters.getLeftNumbers);
+  const rightNumbers = ref(store.getters.getRightNumbers);
   const colors = ref("");
 
 

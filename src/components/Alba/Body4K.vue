@@ -4,7 +4,7 @@
                     top=16.07
                     left=16.4
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[0]
                     :color=colors[0]
                     :text=texts[0]
@@ -14,7 +14,7 @@
                     top=16.07
                     left=53.6
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[1]
                     :color=colors[1]
                     :text=texts[1]
@@ -24,7 +24,7 @@
                     top=32.8
                     left=16.4
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[2]
                     :color=colors[2]
                     :text=texts[2]
@@ -34,7 +34,7 @@
                     top=32.8
                     left=53.6
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[3]
                     :color=colors[3]
                     :text=texts[3]
@@ -44,7 +44,7 @@
                     top=49.6
                     left=16.4
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[4]
                     :color=colors[4]
                     :text=texts[4]
@@ -54,7 +54,7 @@
                     top=49.6
                     left=53.6
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[5]
                     :color=colors[5]
                     :text=texts[5]
@@ -64,7 +64,7 @@
                     top=66.3
                     left=16.4
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[6]
                     :color=colors[6]
                     :text=texts[6]
@@ -74,7 +74,7 @@
                     top=66.3
                     left=53.6
                     :alignment="store.getters.getLeftAlignment"
-                    :style="store.getters.getLeftStyle"
+                    :pStyle="store.getters.getLeftStyle"
                     :icon=icons[7]
                     :color=colors[7]
                     :text=texts[7]

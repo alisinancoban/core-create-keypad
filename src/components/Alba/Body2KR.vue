@@ -4,7 +4,7 @@
                     top=16.07
                     left=16.4
                     :alignment="store.getters.getRightAlignment"
-                    :style="store.getters.getRightStyle"
+                    :pStyle="store.getters.getRightStyle"
                     :icon=icons[0]
                     :color=colors[0]
                     :text=texts[0]
@@ -14,7 +14,7 @@
                     top=16.07
                     left=53.6
                     :alignment="store.getters.getRightAlignment"
-                    :style="store.getters.getRightStyle"
+                    :pStyle="store.getters.getRightStyle"
                     :icon=icons[1]
                     :color=colors[1]
                     :text=texts[1]
@@ -24,7 +24,7 @@
                     top=66.3
                     left=16.4
                     :alignment="store.getters.getRightAlignment"
-                    :style="store.getters.getRightStyle"
+                    :pStyle="store.getters.getRightStyle"
                     :icon=icons[2]
                     :color=colors[2]
                     :text=texts[2]
@@ -34,7 +34,7 @@
                     top=66.3
                     left=53.6
                     :alignment="store.getters.getRightAlignment"
-                    :style="store.getters.getRightStyle"
+                    :pStyle="store.getters.getRightStyle"
                     :icon=icons[3]
                     :color=colors[3]
                     :text=texts[3]

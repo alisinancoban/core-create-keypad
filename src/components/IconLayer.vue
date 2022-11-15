@@ -2,8 +2,8 @@
     <div class="icon-layer" :style="{'top': top + 'mm', 'left': left + 'mm'}">
         <div style="color: rgb(255, 255, 255);">
             <div class="icon-box" :class=alignment>
-                <font-awesome-icon v-if="style == 'icon'" :icon=icon :size=size :style="{ color: props.color }" />
-                <p v-if="style == 'text'"  :class=size :style="{ color: props.color }">{{text}}</p>
+                <font-awesome-icon v-if="pStyle == 'icon'" :icon=icon :size=size :style="{ color: props.color }" />
+                <p v-if="pStyle == 'text'"  :class=size :style="{ color: props.color }">{{text}}</p>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@ const props = defineProps({
 top: Number,
 left:Number,
 alignment: String,
-style: String,
+pStyle: String,
 icon: String,
 text: String,
 size: String,

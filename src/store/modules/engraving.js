@@ -6,16 +6,6 @@ const engraving = {
         leftAlignment: "center",
         rightIconTextSize: "x",
         rightAlignment: "center",
-        // leftIcons: {
-        //     icon1:"fa-regular fa-lightbulb",
-        //     icon2:"fa-regular fa-lightbulb",
-        //     icon3:"fa-regular fa-lightbulb",
-        //     icon4:"fa-regular fa-lightbulb",
-        //     icon5:"fa-regular fa-lightbulb",
-        //     icon6:"fa-regular fa-lightbulb",
-        //     icon7:"fa-regular fa-lightbulb",
-        //     icon8:"fa-regular fa-lightbulb",
-        // },
         leftIcons: [
             "fa-regular fa-lightbulb",
             "fa-regular fa-lightbulb",
@@ -26,16 +16,6 @@ const engraving = {
             "fa-regular fa-lightbulb",
             "fa-regular fa-lightbulb"
         ],
-        // leftTexts: {
-        //     text1:"Text",
-        //     text2:"Text",
-        //     text3:"Text",
-        //     text4:"Text",
-        //     text5:"Text",
-        //     text6:"Text",
-        //     text7:"Text",
-        //     text8:"Text",
-        // },
         leftTexts: [
             "Text",
             "Text",
@@ -56,16 +36,6 @@ const engraving = {
             "fa-regular fa-lightbulb",
             "fa-regular fa-lightbulb"
         ],
-        // rightTexts: {
-        //     text1:"Text",
-        //     text2:"Text",
-        //     text3:"Text",
-        //     text4:"Text",
-        //     text5:"Text",
-        //     text6:"Text",
-        //     text7:"Text",
-        //     text8:"Text",
-        // },
         rightTexts: [
             "Text",
             "Text",
@@ -96,6 +66,18 @@ const engraving = {
             "rgb(255, 255, 255)",
             "rgb(255, 255, 255)"
         ],
+        leftNumbers: [
+            0,
+            0,
+            0,
+            0
+        ],
+        rightNumbers: [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     getters: {
         getLeftIconTextSize: state => {return state.leftIconTextSize},
@@ -114,6 +96,8 @@ const engraving = {
                 return state.rightColors;
             }
         },
+        getLeftNumbers: (state) => {return state.leftNumbers},
+        getRightNumbers: state => {return state.rightNumbers},
     },
     mutations: {
         setLeftIconTextSize: (state, leftIconTextSize) => {state.leftIconTextSize = leftIconTextSize},
@@ -124,6 +108,8 @@ const engraving = {
         setLeftTexts: (state, leftTexts) => {state.leftTexts = leftTexts},
         setRightIcons: (state, rightIcons) => {state.rightIcons = rightIcons},
         setRightTexts: (state, rightTexts) => {state.rightTexts = rightTexts},
+        setLeftNumbers: (state, leftNumbers) => {state.leftNumbers = leftNumbers},
+        setRightNumbers: (state, rightNumbers) => {state.rightNumbers = rightNumbers},
 
         setIcon: (state, payload) => {
             if(payload.frame == "left") {
