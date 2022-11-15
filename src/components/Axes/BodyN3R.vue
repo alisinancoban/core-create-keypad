@@ -4,40 +4,36 @@
             top=24.7
             left=13.3
             :alignment="store.getters.getRightAlignment"
-            :pStyle="store.getters.getRightStyle"
-            :icon=icons[0]
+            pStyle="text"
             :color=colors[0]
-            :text=texts[0]
+            :text=numbers[0]
             :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
             top=24.7
             left=31.11
             :alignment="store.getters.getRightAlignment"
-            :pStyle="store.getters.getRightStyle"
-            :icon=icons[1]
+            pStyle="text"
             :color=colors[1]
-            :text=texts[1]
+            :text=numbers[1]
             :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
             top=24.7
             left=48.97
             :alignment="store.getters.getRightAlignment"
-            :pStyle="store.getters.getRightStyle"
-            :icon=icons[2]
+            pStyle="text"
             :color=colors[2]
-            :text=texts[2]
+            :text=numbers[2]
             :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
             top=24.7
             left=66.84
             :alignment="store.getters.getRightAlignment"
-            :pStyle="store.getters.getRightStyle"
-            :icon=icons[3]
+            pStyle="text"
             :color=colors[3]
-            :text=texts[3]
+            :text=numbers[3]
             :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
@@ -45,9 +41,9 @@
             left=12.5
             :alignment="store.getters.getRightAlignment"
             :pStyle="store.getters.getRightStyle"
-            :icon=icons[3]
-            :color=colors[3]
-            :text=texts[3]
+            :icon=icons[0]
+            :color=colors[4]
+            :text=texts[0]
             :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
@@ -55,9 +51,9 @@
             left=40.1
             :alignment="store.getters.getRightAlignment"
             :pStyle="store.getters.getRightStyle"
-            :icon=icons[3]
-            :color=colors[3]
-            :text=texts[3]
+            :icon=icons[1]
+            :color=colors[5]
+            :text=texts[1]
             :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
@@ -65,9 +61,9 @@
             left=68.3
             :alignment="store.getters.getRightAlignment"
             :pStyle="store.getters.getRightStyle"
-            :icon=icons[3]
-            :color=colors[3]
-            :text=texts[3]
+            :icon=icons[2]
+            :color=colors[6]
+            :text=texts[2]
             :size="store.getters.getRightIconTextSize"
         />
     </div>
@@ -84,6 +80,7 @@ const store = useStore();
 
 const icons = ref(store.getters.getRightIcons);
 const texts = ref(store.getters.getRightTexts);
+const numbers = ref(store.getters.getRightNumbers);
 const colors = ref(store.getters.getColors("right"));
 
 </script>

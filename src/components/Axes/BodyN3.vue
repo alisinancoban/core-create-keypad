@@ -42,7 +42,7 @@
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
                     :icon=icons[0]
-                    :color=colors[3]
+                    :color=colors[4]
                     :text=texts[0]
                     :size="store.getters.getLeftIconTextSize"
                 />
@@ -51,9 +51,9 @@
                     left=40.1
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[0]
-                    :color=colors[3]
-                    :text=texts[0]
+                    :icon=icons[1]
+                    :color=colors[5]
+                    :text=texts[1]
                     :size="store.getters.getLeftIconTextSize"
                 />
                 <IconLayer 
@@ -61,9 +61,9 @@
                     left=68.3
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[0]
-                    :color=colors[3]
-                    :text=texts[0]
+                    :icon=icons[2]
+                    :color=colors[6]
+                    :text=texts[2]
                     :size="store.getters.getLeftIconTextSize"
                 />
             </div>

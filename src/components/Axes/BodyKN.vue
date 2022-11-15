@@ -105,9 +105,9 @@
                     left=40.1
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[3]
-                    :color=colors[3]
-                    :text=texts[3]
+                    :icon=icons[10]
+                    :color=colors[10]
+                    :text=texts[10]
                     :size="store.getters.getLeftIconTextSize"
                 />
                 <IconLayer 
@@ -115,9 +115,9 @@
                     left=68.3
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[10]
-                    :color=colors[10]
-                    :text=texts[10]
+                    :icon=icons[11]
+                    :color=colors[11]
+                    :text=texts[11]
                     :size="store.getters.getLeftIconTextSize"
                 />
             </div>

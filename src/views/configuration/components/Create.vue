@@ -25,8 +25,12 @@
                 <el-row justify="center">
                     <el-col :span="24">
                         <Alba 
+                        v-if="store.getters.getSelectedKeypad=='ALBA'"
                         :faceImg=store.getters.getFrameImage 
                         :buttonImg=store.getters.getButtonImage  />
+                        <Axes 
+                        v-if="store.getters.getSelectedKeypad=='AXES'"
+                        :faceImg=store.getters.getFrameImage  />
                     </el-col>
                 </el-row>
             </el-col>
@@ -44,6 +48,7 @@
   import { ref, onMounted  } from 'vue'
   import { useStore } from 'vuex'
   import Alba from "../../../components/Alba/Alba.vue"
+  import Axes from "../../../components/Axes/Axes.vue"
 
   const store = useStore();
 
