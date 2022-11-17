@@ -1,40 +1,40 @@
 <template>
     <div class="icon-table">
         <IconLayer 
+            class="ft-110" 
             top=24.7
             left=13.3
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
             :color=colors[0]
             :text=numbers[0]
-            :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
+            class="ft-110" 
             top=24.7
             left=31.11
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
             :color=colors[1]
             :text=numbers[1]
-            :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
+            class="ft-110" 
             top=24.7
             left=48.97
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
             :color=colors[2]
             :text=numbers[2]
-            :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
+            class="ft-110" 
             top=24.7
             left=66.84
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
             :color=colors[3]
             :text=numbers[3]
-            :size="store.getters.getRightIconTextSize"
         />
         <IconLayer 
             top=66.15
@@ -87,6 +87,9 @@ const colors = ref(store.getters.getColors("right"));
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.ft-110 {
+    font-size: 110px;
+}
 .x {
 font-size: 0.8em;
 }

@@ -9,8 +9,10 @@
             <div class="body-img">
                 <BodyN3 v-if="store.getters.getLeftSide=='n3'"/>
                 <BodyKN v-if="store.getters.getLeftSide=='kn'"/>
+                <BodyDR v-if="store.getters.getLeftSide=='dr'"/>
                 <BodyN3R v-if="store.getters.getRightSide=='n3'"/>
                 <BodyKNR v-if="store.getters.getRightSide=='kn'"/>
+                <BodyDRR v-if="store.getters.getRightSide=='dr'"/>
             </div>
         </div>
     </div>

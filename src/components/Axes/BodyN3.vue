@@ -1,40 +1,40 @@
 <template>
             <div class="icon-table">
                 <IconLayer 
-                    top=24.7
-                    left=13.3
+                    class="ft-110"
+                    top=19
+                    left=9
                     :alignment="store.getters.getLeftAlignment"
                     pStyle="text"
                     :color=colors[0]
                     :text=numbers[0]
-                    :size="store.getters.getLeftIconTextSize"
                 />
                 <IconLayer 
-                    top=24.7
-                    left=31.11
+                    class="ft-110"
+                    top=19
+                    left=27
                     :alignment="store.getters.getLeftAlignment"
                     pStyle="text"
                     :color=colors[1]
                     :text=numbers[1]
-                    :size="store.getters.getLeftIconTextSize"
                 />
                 <IconLayer 
-                    top=24.7
-                    left=48.97
+                    class="ft-110"
+                    top=19
+                    left=45
                     :alignment="store.getters.getLeftAlignment"
                     pStyle="text"
                     :color=colors[2]
                     :text=numbers[2]
-                    :size="store.getters.getLeftIconTextSize"
                 />
-                <IconLayer 
-                    top=24.7
-                    left=66.84
+                <IconLayer
+                    class="ft-110" 
+                    top=19
+                    left=63
                     :alignment="store.getters.getLeftAlignment"
                     pStyle="text"
                     :color=colors[3]
                     :text=numbers[3]
-                    :size="store.getters.getLeftIconTextSize"
                 />
                 <IconLayer 
                     top=66.15
@@ -87,6 +87,10 @@ const colors = ref(store.getters.getColors("left"));
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.ft-110 {
+    font-size: 110px;
+}
 .x {
     font-size: 0.8em;
 }

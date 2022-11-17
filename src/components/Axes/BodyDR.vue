@@ -1,73 +1,12 @@
 <template>
             <div class="icon-table">
                 <IconLayer 
-                    top=24.7
-                    left=13.3
+                    top=41.05
+                    left=33.4
                     :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
+                    pStyle="icon"
                     :icon=icons[0]
                     :color=colors[0]
-                    :text=texts[0]
-                    :size="store.getters.getLeftIconTextSize"
-                />
-                <IconLayer 
-                    top=24.7
-                    left=31.11
-                    :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[1]
-                    :color=colors[1]
-                    :text=texts[1]
-                    :size="store.getters.getLeftIconTextSize"
-                />
-                <IconLayer 
-                    top=24.7
-                    left=48.97
-                    :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[2]
-                    :color=colors[2]
-                    :text=texts[2]
-                    :size="store.getters.getLeftIconTextSize"
-                />
-                <IconLayer 
-                    top=24.7
-                    left=66.84
-                    :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[3]
-                    :color=colors[3]
-                    :text=texts[3]
-                    :size="store.getters.getLeftIconTextSize"
-                />
-                <IconLayer 
-                    top=66.15
-                    left=12.5
-                    :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[4]
-                    :color=colors[4]
-                    :text=texts[4]
-                    :size="store.getters.getLeftIconTextSize"
-                />
-                <IconLayer 
-                    top=66.15
-                    left=40.1
-                    :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[5]
-                    :color=colors[5]
-                    :text=texts[5]
-                    :size="store.getters.getLeftIconTextSize"
-                />
-                <IconLayer 
-                    top=66.15
-                    left=68.3
-                    :alignment="store.getters.getLeftAlignment"
-                    :pStyle="store.getters.getLeftStyle"
-                    :icon=icons[6]
-                    :color=colors[6]
-                    :text=texts[6]
                     :size="store.getters.getLeftIconTextSize"
                 />
             </div>
