@@ -2,7 +2,7 @@
     <div class="icon-table">
         <IconLayer 
             class="ft-110" 
-            top=24.7
+            top=19
             left=13.3
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
@@ -11,7 +11,7 @@
         />
         <IconLayer 
             class="ft-110" 
-            top=24.7
+            top=19
             left=31.11
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
@@ -20,7 +20,7 @@
         />
         <IconLayer 
             class="ft-110" 
-            top=24.7
+            top=19
             left=48.97
             :alignment="store.getters.getRightAlignment"
             pStyle="text"
@@ -29,7 +29,7 @@
         />
         <IconLayer 
             class="ft-110" 
-            top=24.7
+            top=19
             left=66.84
             :alignment="store.getters.getRightAlignment"
             pStyle="text"

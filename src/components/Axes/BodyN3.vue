@@ -38,7 +38,7 @@
                 />
                 <IconLayer 
                     top=66.15
-                    left=12.5
+                    left=7.5
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
                     :icon=icons[0]
@@ -48,7 +48,7 @@
                 />
                 <IconLayer 
                     top=66.15
-                    left=40.1
+                    left=35.1
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
                     :icon=icons[1]
@@ -58,7 +58,7 @@
                 />
                 <IconLayer 
                     top=66.15
-                    left=68.3
+                    left=63.3
                     :alignment="store.getters.getLeftAlignment"
                     :pStyle="store.getters.getLeftStyle"
                     :icon=icons[2]
