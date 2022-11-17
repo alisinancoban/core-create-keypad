@@ -59,6 +59,11 @@
                                     <el-input v-model="leftTexts[index]" class="w-50 m-2" size="large" />
                                 </el-col>
                             </div>
+                            <div v-if="store.getters.getLeftSide == 'kn'">
+                                <el-col class="dp-inline" :span="12" v-for="(text,index) in leftTexts.slice(0,2)" :key="index">
+                                    <el-input v-model="leftTexts[index]" class="w-50 m-2" size="large" />
+                                </el-col>
+                            </div>
                         </div>
                         <div v-if="store.getters.getLeftStyle == 'icon'">
                             <div v-if="store.getters.getLeftSide == '2k'" >
@@ -76,6 +81,16 @@
                                     <el-input-number v-model="leftNumbers[index]" :min="0" :max="9" class="w-50 m-2" size="large" />
                                 </el-col>
                                 <el-col class="dp-inline" :span="12" v-for="(icon, key, index) in leftIcons.slice(0,3)" :key="index">
+                                    <IconPicker :icon="icon" :index="key" frame = "left" />
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getLeftSide == 'kn'">
+                                <el-col class="dp-inline" :span="12" v-for="(icon, key, index) in leftIcons.slice(0,2)" :key="index">
+                                    <IconPicker :icon="icon" :index="key" frame = "left" />
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getLeftSide == 'dr'">
+                                <el-col class="dp-inline" :span="12" v-for="(icon, key, index) in leftIcons.slice(0,1)" :key="index">
                                     <IconPicker :icon="icon" :index="key" frame = "left" />
                                 </el-col>
                             </div>
@@ -105,6 +120,11 @@
                                     <el-input v-model="rightTexts[index]" class="w-50 m-2" size="large" />
                                 </el-col>
                             </div>
+                            <div v-if="store.getters.getRightSide == 'kn'">
+                                <el-col class="dp-inline" :span="12" v-for="(text,index) in rightTexts.slice(0,2)" :key="index">
+                                    <el-input v-model="rightTexts[index]" class="w-50 m-2" size="large" />
+                                </el-col>
+                            </div>
                         </div>
                         <div v-if="store.getters.getRightStyle == 'icon'">
                             <div v-if="store.getters.getRightSide == '2k'" >
@@ -122,6 +142,16 @@
                                     <el-input-number v-model="rightNumbers[index]" :min="0" :max="9" class="w-50 m-2" size="large" />
                                 </el-col>
                                 <el-col class="dp-inline" :span="12" v-for="(icon, key, index) in rightIcons.slice(0,3)" :key="index">
+                                    <IconPicker :icon="icon" :index="key" frame = "right" />
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getRightSide == 'kn'">
+                                <el-col class="dp-inline" :span="12" v-for="(icon, key, index) in rightIcons.slice(0,2)" :key="index">
+                                    <IconPicker :icon="icon" :index="key" frame = "right" />
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getRightSide == 'dr'">
+                                <el-col class="dp-inline" :span="12" v-for="(icon, key, index) in rightIcons.slice(0,1)" :key="index">
                                     <IconPicker :icon="icon" :index="key" frame = "right" />
                                 </el-col>
                             </div>
@@ -170,6 +200,16 @@
                                     <ColorPicker class="mb-1" :color=color :index="key" frame="left"/>
                                 </el-col>
                             </div>
+                            <div v-if="store.getters.getLeftSide == 'kn'">
+                                <el-col class="dp-inline" :span="12" v-for="(color, key, index) in 3" :key="index">
+                                    <ColorPicker class="mb-1" :color=color :index="key" frame="left"/>
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getLeftSide == 'dr'">
+                                <el-col class="dp-inline" :span="12" v-for="(color, key, index) in 1" :key="index">
+                                    <ColorPicker class="mb-1" :color=color :index="key" frame="left"/>
+                                </el-col>
+                            </div>
                         </el-row>                       
                     </el-col>
                     <el-col v-if="store.getters.getFrameType == 'doubleFrame'" :span="2">
@@ -189,6 +229,16 @@
                             </div>
                             <div v-if="store.getters.getRightSide == 'n3'">
                                 <el-col class="dp-inline" :span="12" v-for="(color, key, index) in 7" :key="index">
+                                    <ColorPicker class="mb-1" :color=color :index="key" frame="right"/>
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getRightSide == 'kn'">
+                                <el-col class="dp-inline" :span="12" v-for="(color, key, index) in 3" :key="index">
+                                    <ColorPicker class="mb-1" :color=color :index="key" frame="right"/>
+                                </el-col>
+                            </div>
+                            <div v-if="store.getters.getRightSide == 'dr'">
+                                <el-col class="dp-inline" :span="12" v-for="(color, key, index) in 1" :key="index">
                                     <ColorPicker class="mb-1" :color=color :index="key" frame="right"/>
                                 </el-col>
                             </div>
